@@ -32,7 +32,8 @@ def random_rotation(x, rg, row_axis=1, col_axis=2, channel_axis=0,
 
     # Arguments
         x: Input tensor. Must be 3D.
-        rg: Rotation range, in degrees.
+        rg: Rotation range described as a single integer, in degrees. 
+            Will be applied as `(-rg,rg)`.
         row_axis: Index of axis for rows in the input tensor.
         col_axis: Index of axis for columns in the input tensor.
         channel_axis: Index of axis for channels in the input tensor.
